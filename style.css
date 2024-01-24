@@ -67,7 +67,7 @@ body {
   .top-half {
     text-align: center; /* Esto centra la imagen si es más pequeña que el ancho del contenedor */
     padding: 0px; /* Esto agrega un poco de espacio arriba y abajo de la imagen */
-    background-image: url(juguetes.png);
+    background-image: url(Img/juguetes.png);
     height: 750px;
     width: 100%;
     background-position: top center;
