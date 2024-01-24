@@ -10,7 +10,7 @@ JavaScript - Lenguaje de programación
 
 ## ✒️ Autores
 Tu Nombre - Desarrollo - GabriLPDA22
-Nombre de tu Compañero - Desarrollo - Alex
+Nombre de tu Compañero - Desarrollo - AlexIana21
 
 ## 🎁 Expresiones de Gratitud
 Comparte este proyecto utilizando el hashtag #UnJugueteUnaSonrisa 📢.
