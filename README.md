@@ -9,8 +9,8 @@ CSS - Usado para estilos
 JavaScript - Lenguaje de programación
 
 ## ✒️ Autores
-Tu Nombre - Desarrollo - GabriLPDA22
-Nombre de tu Compañero - Desarrollo - AlexIana21
+GabriLPDA22
+AlexIana21
 
 ## 🎁 Expresiones de Gratitud
 Comparte este proyecto utilizando el hashtag #UnJugueteUnaSonrisa 📢.
