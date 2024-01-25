@@ -10,7 +10,7 @@ JavaScript
 
 ## ✒️ Autores
 [GabriLPDA22](https://github.com/GabriLPDA22)<br>
-AlexIana21
+[AlexIana21](https://github.com/AlexIana21)
 
 ## 🎁 Expresiones de Gratitud
 Comparte este proyecto utilizando el hashtag #UnJugueteUnaSonrisa 📢.<br>
