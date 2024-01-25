@@ -1,7 +1,28 @@
 # 🧸 Recogida de Juguetes para #UnJugueteUnaSonrisa 🎁
 
-## Sobre el Proyecto
-Este proyecto, llevado a cabo por estudiantes del Centro San Valero, consiste en el desarrollo de una página web para una asociación dedicada a la recogida de juguetes. El objetivo principal es crear una plataforma fácil de usar que promueva la donación de juguetes, bajo la iniciativa #UnJugueteUnaSonrisa.
+Este proyecto, llevado a cabo por estudiantes del **Centro San Valero**, consiste en el desarrollo de una página web para una asociación dedicada a la recogida de juguetes. 🎁
+
+## Objetivo Principal 🎯
+
+Crear una plataforma fácil de usar que promueva la donación de juguetes, apoyando la iniciativa #UnJugueteUnaSonrisa. Queremos ayudar a llevar sonrisas a más niños y niñas. 😄
+
+## Características de la Web 💻
+
+- **Fácil de Navegar:** Diseñada para que cualquier usuario pueda participar sin complicaciones.
+- **Información Clara:** Detalles sobre cómo y qué juguetes donar.
+- **Formulario de Contacto:** Para preguntas y coordinación de donaciones.
+- **Galería de Impacto:** Historias y fotos de las donaciones realizadas.
+
+## Cómo Contribuir 🤝
+
+Si estás interesado en apoyar el proyecto, aquí hay algunas formas de hacerlo:
+- **Donando Juguetes:** Descubre cómo puedes donar juguetes para alegrar a un niño o niña.
+- **Voluntariado:** Únete a nuestro equipo y ayuda en la recogida y distribución de juguetes.
+- **Difusión:** Comparte nuestra iniciativa en redes sociales con el hashtag #UnJugueteUnaSonrisa.
+
+## Equipo del Proyecto 👥
+
+Este proyecto es posible gracias al esfuerzo y dedicación de los estudiantes del Centro San Valero, guiados por sus profesores y apoyados por la comunidad.
 
 ## 🛠️ Construido con
 ![CSS](https://img.shields.io/badge/CSS-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
