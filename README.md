@@ -10,7 +10,6 @@ Crear una plataforma fácil de usar que promueva la donación de juguetes, apoya
 
 - **Fácil de Navegar:** Diseñada para que cualquier usuario pueda participar sin complicaciones.
 - **Información Clara:** Detalles sobre cómo y qué juguetes donar.
-- **Formulario de Contacto:** Para preguntas y coordinación de donaciones.
 - **Galería de Impacto:** Historias y fotos de las donaciones realizadas.
 
 ## Cómo Contribuir 🤝
