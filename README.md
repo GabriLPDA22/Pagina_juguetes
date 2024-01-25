@@ -9,7 +9,7 @@ CSS<br>
 JavaScript 
 
 ## ✒️ Autores
-GabriLPDA22<br>
+[GabriLPDA22](https://github.com/GabriLPDA22)<br>
 AlexIana21
 
 ## 🎁 Expresiones de Gratitud
