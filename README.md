@@ -4,9 +4,9 @@
 Este proyecto, llevado a cabo por estudiantes del Centro San Valero, consiste en el desarrollo de una página web para una asociación dedicada a la recogida de juguetes. El objetivo principal es crear una plataforma fácil de usar que promueva la donación de juguetes, bajo la iniciativa #UnJugueteUnaSonrisa.
 
 ## 🛠️ Construido con
-HTML<br> 
-CSS<br> 
-JavaScript 
+![CSS](https://img.shields.io/badge/CSS-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) 
 
 ## ✒️ Autores
 [GabriLPDA22](https://github.com/GabriLPDA22)<br>
