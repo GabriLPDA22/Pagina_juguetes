@@ -82,25 +82,47 @@ body {
     display: block;
     margin: 0 auto; /* Centra la imagen horizontalmente si es más pequeña que el contenedor */
   }
-  /* CARDS*/
-  .cards-section {
+  /* CARDS - Carrusel*/
+  .cards-section-carousel {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Esto mantiene el espacio entre las tarjetas */
+    flex-wrap: nowrap;
+    justify-content: space-around;
     padding: 0px;
-    background-color: #FFF5EB; /* Color crema para el fondo */
+    background-color: #FFF5EB;
     margin-bottom: -4px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    user-select: none;
+    -webkit-user-drag: none;
+    touch-action: pan-x;
+    /* scroll-behavior: smooth; */ /* Opcional: descomentar si se desea suavidad en el scroll no automático */
+    /* scroll-snap-type: none; */ /* Descomentar si se desactiva el scroll-snap */
   }
   
   .card {
-    margin: 10px; /* Margen para asegurar espacio entre las tarjetas */
-    padding: 15px; /* Relleno dentro de las tarjetas */
-    border-radius: 10px; /* Bordes redondeados para las tarjetas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-    background: #ffffff; /* Fondo blanco para las tarjetas */
-    text-align: center; /* Centrado de texto para el contenido de las tarjetas */
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    text-align: center;
+    display: inline-block;
+    white-space: normal;
+    flex: 0 0 auto;
+    /* scroll-snap-align: none; */ /* Descomentar si se desactiva el scroll-snap */
+    flex-shrink: 0;
   }
   
+  .cards-section-carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .cards-section-carousel.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+
  /* Estilos para la primera tarjeta */
 .card:nth-child(1) {
     width: 28%;
@@ -140,6 +162,33 @@ body {
   
   /* Estilos para la imagen de la tercera tarjeta */
   .card:nth-child(3) img {
+    border-radius: 0; /* Sin bordes redondeados, esquina cuadrada */
+  }
+
+  .card:nth-child(4) {
+    width: 28%;
+    background-color: #FEF9E7; /* Amarillo pastel */
+    color: #7D6608; /* Marrón oscuro */
+    font-family: 'Courier New', monospace;
+    border: 1px solid #F9E79F; /* Borde sólido */
+  }
+  
+  /* Estilos para la imagen de la cuarta tarjeta */
+  .card:nth-child(4) img {
+    border-radius: 0; /* Sin bordes redondeados, esquina cuadrada */
+  }
+
+
+  .card:nth-child(5) {
+    width: 28%;
+    background-color: #FEF9E7; /* Amarillo pastel */
+    color: #7D6608; /* Marrón oscuro */
+    font-family: 'Courier New', monospace;
+    border: 1px solid #F9E79F; /* Borde sólido */
+  }
+  
+  /* Estilos para la imagen de la quinta tarjeta */
+  .card:nth-child(5) img {
     border-radius: 0; /* Sin bordes redondeados, esquina cuadrada */
   }
 
