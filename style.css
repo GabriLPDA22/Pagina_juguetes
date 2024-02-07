@@ -114,9 +114,27 @@ body {
     height: 300px;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
   }
   .image-1 {
     background-image: url(./FotosWeb/Fotos.png);
+  }
+
+  .image-2{
+    background-image: url(./FotosWeb/Empresas.png);
+  }
+
+  .image-3{
+    background-image: url(./FotosWeb/Destinatarios.png);
+  }  
+
+  .image-4{
+    background-image: url(./FotosWeb/ComoAyudar.png);
+
+  }
+
+  .image-5{
+    background-image: url(./FotosWeb/Grupo.jpg);
   }
 
   .card-text {
