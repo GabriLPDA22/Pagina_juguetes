@@ -63,23 +63,26 @@ body {
   }
   
   .top-half {
-    text-align: center; /* Esto centra la imagen si es más pequeña que el ancho del contenedor */
-    padding: 0px; /* Esto agrega un poco de espacio arriba y abajo de la imagen */
-    background-image: url(/FotosWeb/juguetes.png);
-    height: 500px;
+    text-align: center;
+    padding: 0px;
+    background-image: url('./FotosWeb/portada1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+    height: 500px; /* Ajusta la altura según sea necesario */
     width: 100%;
-    background-position: top center;
-    background-size: cover;
+    background-position: top center; /* Ajusta esto si el texto no está en la parte superior central */
+    background-size: cover; /* Cambia 'cover' por 'contain' para evitar recorte */
+    background-repeat: no-repeat; /* Esto evitará que la imagen se repita */
     background-attachment: fixed;
   }
   
   .top-half img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover; 
+    max-width: 100%; /* Esto asegura que la imagen no se desborde de su contenedor */
+    height: auto; /* Esto mantiene las proporciones de la imagen */
+    object-fit: cover; /* Cambia 'cover' por 'contain' para evitar recorte */
     display: block;
     margin: 0 auto; 
   }
+  
+
   /* CARDS - Carrusel*/
   .cards-section-carousel {
     display: flex;
@@ -147,25 +150,6 @@ body {
   }
   
 
-
-.top-half {
-  text-align: center; /* Esto centra la imagen si es más pequeña que el ancho del contenedor */
-  padding: 0px; /* Esto agrega un poco de espacio arriba y abajo de la imagen */
-  background-image: url(/FotosWeb/juguetes.png);
-  height: 500px;
-  width: 100%;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.top-half img {
-  width: 100%; 
-  height: 400px; 
-  object-fit: cover; 
-  display: block;
-  margin: 0 auto;
-}
 /* CARDS - Carrusel*/
 .cards-section-carousel {
   display: flex;
