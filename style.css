@@ -64,7 +64,7 @@ body {
   .top-half {
     text-align: center;
     padding: 0px;
-    background-image: url('./FotosWeb/portada1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+    background-image: url('./FotosWeb/juguetes.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
     background-position: center center; /* Ajusta la imagen al centro */
     background-size: cover; /* Se ajusta para asegurarse de que todo el texto es visible */
     background-repeat: no-repeat;
