@@ -1,54 +1,54 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body {
-  margin: 0;
-  font-family: 'Courier New', monospace;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #FEEFDD; /* Color de fondo del navbar */
-  padding: 10px 20px;
-}
-.navbar div {
-  display: flex;
-  align-items: center;
-}
-.navbar a {
-  text-decoration: none;
-  color: #5A5A5A; /* Color del texto de los enlaces */
-  margin: 0 5px; /* Espaciado reducido entre los íconos */
-}
-.navbar .logo {
-  font-size: 30px; /* Tamaño más grande para el texto del centro */
-  font-weight: bold;
-  color: #E63946; 
-  letter-spacing: 0.05em; /* Espaciado entre letras para un estilo más moderno */
-  text-shadow: 2px 2px #F1FAEE; 
-  font-family: 'Courier New', monospace;
-  margin-left: 100px;
-}
-.navbar .social-media {
-  font-size: 20px;
-}
-.navbar .social-media a {
-  margin-right: 15px;
-}
-.navbar .menu {
-  font-size: 18px;
-}
-.navbar .menu a {
-  margin-right: 10px;
-}
-.navbar .login-logout a {
-  background-color: transparent;
-  color: #5A5A5A;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
+    margin: 0;
+    font-family: 'Courier New', monospace;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FEEFDD; /* Color de fondo del navbar */
+    padding: 10px 20px;
+  }
+  .navbar div {
+    display: flex;
+    align-items: center;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #5A5A5A; /* Color del texto de los enlaces */
+    margin: 0 5px; /* Espaciado reducido entre los íconos */
+  }
+  .navbar .logo {
+    font-size: 30px; /* Tamaño más grande para el texto del centro */
+    font-weight: bold;
+    color: #E63946; 
+    letter-spacing: 0.05em; /* Espaciado entre letras para un estilo más moderno */
+    text-shadow: 2px 2px #F1FAEE; 
+    font-family: 'Courier New', monospace;
+    margin-left: 100px;
+  }
+  .navbar .social-media {
+    font-size: 20px;
+  }
+  .navbar .social-media a {
+    margin-right: 15px;
+  }
+  .navbar .menu {
+    font-size: 18px;
+  }
+  .navbar .menu a {
+    margin-right: 10px;
+  }
+  .navbar .login-logout a {
+    background-color: transparent;
+    color: #5A5A5A;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
 
   /* Estilos del Contenido Principal */
   .main-content {
@@ -109,6 +109,7 @@ body {
     flex: 0 0 auto;
     /* scroll-snap-align: none; */ /* Descomentar si se desactiva el scroll-snap */
     flex-shrink: 0;
+    
   }
   .card-image {
     height: 300px;
@@ -232,287 +233,287 @@ body {
 }
 
 
-.cards-section-carousel.active {
-  cursor: grabbing;
-  cursor: -webkit-grabbing;
-}
+  .cards-section-carousel.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+ 
+  /* Estilos para la imagen de la primera tarjeta */
+  .card:nth-child(1) img {
+    border-radius: 0; /* Sin bordes redondeados, esquina cuadrada */
+  }
+  
+ 
+  
+  /* Estilos para la imagen de la segunda tarjeta */
+  .card:nth-child(2) img {
+    border-radius: 0; /* Sin bordes redondeados, esquina cuadrada */
+  }
+  
+  /* Estilos para la imagen de la tercera tarjeta */
+  .card:nth-child(3) img {
+    border-radius: 0; /* Sin bordes redondeados, esquina cuadrada */
+  }
 
-/* Estilos para la imagen de la primera tarjeta */
-.card:nth-child(1) img {
-  border-radius: 0; /* Sin bordes redondeados, esquina cuadrada */
-}
+  
+  /*Estilos botones de scss a css*/
+  .portfolio-experiment {
+    text-align: center; /* Centra el contenedor del botón */
+    padding: 10px; /* Espacio alrededor para no cortar la animación */
+    display: inline-block; /* Solo ocupa el espacio de su contenido */
+  }
+  
+  .portfolio-experiment a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px; /* Reducir el relleno para disminuir el tamaño del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 1em; /* Tamaño del texto */
+    background: #2d2d2d; /* Fondo del botón */
+    text-decoration: none; /* Quitar subrayado del texto */
+    overflow: hidden; /* Evita que las líneas se desborden */
+    margin: 10px 0; /* Margen arriba y abajo para espacio alrededor del botón */
+    cursor: pointer;
+  }
+  
+  .portfolio-experiment .line {
+    position: absolute;
+    background: #f26522; /* Color de la línea */
+  }
+  
+  /* Posición de las líneas - deben estar fuera del área visible inicialmente */
+  .portfolio-experiment .line.-right,
+  .portfolio-experiment .line.-left {
+    width: 3px; /* Ancho de la línea */
+    bottom: 0;
+    top: 0;
+    transform: scaleY(0); /* Oculta verticalmente */
+  }
+  
+  .portfolio-experiment .line.-top,
+  .portfolio-experiment .line.-bottom {
+    height: 3px; /* Altura de la línea */
+    left: 0;
+    right: 0;
+    transform: scaleX(0); /* Oculta horizontalmente */
+  }
+  
+  /* Posiciones de inicio para las líneas */
+  .portfolio-experiment .line.-right { right: 0; }
+  .portfolio-experiment .line.-top { top: 0; }
+  .portfolio-experiment .line.-left { left: 0; }
+  .portfolio-experiment .line.-bottom { bottom: 0; }
+  
+  /* Transiciones de líneas */
+  .portfolio-experiment .line {
+    transition: transform 0.3s cubic-bezier(0,.53,.29,1), right 0.3s, left 0.3s;
+  }
+  
+  /* Transiciones de líneas al pasar el ratón por encima */
+  .portfolio-experiment a:hover .line,
+  .portfolio-experiment a:focus .line {
+    transform: scale(1);
+  }
+  
+  /* Transiciones específicas para las líneas al pasar el ratón */
+  .portfolio-experiment a:hover .line.-top,
+  .portfolio-experiment a:focus .line.-top {
+    transition-delay: 0.1s;
+  }
+  
+  .portfolio-experiment a:hover .line.-right,
+  .portfolio-experiment a:focus .line.-right {
+    transition-delay: 0.2s;
+  }
+  
+  .portfolio-experiment a:hover .line.-bottom,
+  .portfolio-experiment a:focus .line.-bottom {
+    transition-delay: 0.3s;
+  }
+  
+  .portfolio-experiment a:hover .line.-left,
+  .portfolio-experiment a:focus .line.-left {
+    transition-delay: 0.4s;
+  }
+  
+  .grupo {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
+  .texto1{
+    text-align: center;
+    margin-top: 125px;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s; /* Transición suave de la opacidad */
+  }
+  
+  .texto2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s; /* Transición suave de la opacidad */
+    width: 90%;
+    margin: 0 auto;
+    column-gap: 10%;
+  }
+  
+  .parrafo-con-margen1 {
+    text-align: justify;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s; /* Transición suave de la opacidad */
+  }
+  
+  .texto3{
+    text-align: center;
+    margin-top: 125px;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s; /* Transición suave de la opacidad */
+  }
 
+  .imagen-grupo-1 {
+    width: 30%;
+  }
+  
+  .imagen-grupo-2 {
+    width: 30%;
 
-/* Estilos para la imagen de la segunda tarjeta */
-.card:nth-child(2) img {
-  border-radius: 0; /* Sin bordes redondeados, esquina cuadrada */
-}
+  }
 
-/* Estilos para la imagen de la tercera tarjeta */
-.card:nth-child(3) img {
-  border-radius: 0; /* Sin bordes redondeados, esquina cuadrada */
-}
+  .imagen-grupo-3 {
+    width: 30%;
 
+  } 
 
-/*Estilos botones de scss a css*/
-.portfolio-experiment {
-  text-align: center; /* Centra el contenedor del botón */
-  padding: 10px; /* Espacio alrededor para no cortar la animación */
-  display: inline-block; /* Solo ocupa el espacio de su contenido */
-}
+  .imagen-grupo-4 {
+    width: 30%;
+    justify-content: flex-start;
+  } 
 
-.portfolio-experiment a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px; /* Reducir el relleno para disminuir el tamaño del botón */
-  color: white; /* Color del texto del botón */
-  font-size: 1em; /* Tamaño del texto */
-  background: #2d2d2d; /* Fondo del botón */
-  text-decoration: none; /* Quitar subrayado del texto */
-  overflow: hidden; /* Evita que las líneas se desborden */
-  margin: 10px 0; /* Margen arriba y abajo para espacio alrededor del botón */
-  cursor: pointer;
-}
+  .parrafo-con-margen2{
+    text-align: justify;
+    text-align: left;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s;
+  }
+  
+  
+  
+  .texto4{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    opacity: 0; /* Inicialmente oculto */
+  }
 
-.portfolio-experiment .line {
-  position: absolute;
-  background: #f26522; /* Color de la línea */
-}
+  .parrafo-con-margen3{
+    margin-bottom:50px ;
+    opacity: 0; /* Inicialmente oculto */
+  }
 
-/* Posición de las líneas - deben estar fuera del área visible inicialmente */
-.portfolio-experiment .line.-right,
-.portfolio-experiment .line.-left {
-  width: 3px; /* Ancho de la línea */
-  bottom: 0;
-  top: 0;
-  transform: scaleY(0); /* Oculta verticalmente */
-}
+  .texto5{
+    text-align: center;
+    margin-top: 125px;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s; /* Transición suave de la opacidad */
+    margin-bottom: 30px;
+  }
 
-.portfolio-experiment .line.-top,
-.portfolio-experiment .line.-bottom {
-  height: 3px; /* Altura de la línea */
-  left: 0;
-  right: 0;
-  transform: scaleX(0); /* Oculta horizontalmente */
-}
+  .texto6{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    opacity: 0; /* Inicialmente oculto */
+  }
 
-/* Posiciones de inicio para las líneas */
-.portfolio-experiment .line.-right { right: 0; }
-.portfolio-experiment .line.-top { top: 0; }
-.portfolio-experiment .line.-left { left: 0; }
-.portfolio-experiment .line.-bottom { bottom: 0; }
+  .parrafo-con-margen4{
+    margin-bottom:50px ;
+    opacity: 0; /* Inicialmente oculto */
+  }
 
-/* Transiciones de líneas */
-.portfolio-experiment .line {
-  transition: transform 0.3s cubic-bezier(0,.53,.29,1), right 0.3s, left 0.3s;
-}
+  .texto7{
+    text-align: center;
+    margin-top: 125px;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s; /* Transición suave de la opacidad */
+    margin-bottom: 30px;
 
-/* Transiciones de líneas al pasar el ratón por encima */
-.portfolio-experiment a:hover .line,
-.portfolio-experiment a:focus .line {
-  transform: scale(1);
-}
+  }
 
-/* Transiciones específicas para las líneas al pasar el ratón */
-.portfolio-experiment a:hover .line.-top,
-.portfolio-experiment a:focus .line.-top {
-  transition-delay: 0.1s;
-}
+  .texto8{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    opacity: 0; /* Inicialmente oculto */
+  }
 
-.portfolio-experiment a:hover .line.-right,
-.portfolio-experiment a:focus .line.-right {
-  transition-delay: 0.2s;
-}
+  .parrafo-con-margen5{
+    margin-bottom:50px ;
+    opacity: 0; /* Inicialmente oculto */
+  }
+  
+  .parrafo-con-margen6{
+    margin-bottom:50px;
+    text-align: justify;
+    text-align: center;
+    opacity: 0; /* Inicialmente oculto */
+  }
 
-.portfolio-experiment a:hover .line.-bottom,
-.portfolio-experiment a:focus .line.-bottom {
-  transition-delay: 0.3s;
-}
+  .textoHorario {
+    text-align: center; 
+    width: 100%;
+    margin-top:50px;
+    opacity: 0; /* Inicialmente oculto */
+  }
+  
+  .textoFotos {
+    text-align: center; 
+    width: 100%;
+    margin-top:50px;
+    opacity: 0; /* Inicialmente oculto */
+  }
 
-.portfolio-experiment a:hover .line.-left,
-.portfolio-experiment a:focus .line.-left {
-  transition-delay: 0.4s;
-}
+  .collage {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+    grid-template-rows: minmax(auto, 50vh) minmax(auto, 50vh); /* Dos filas que ocupan cada una el 50% de la altura de la ventana */
+    gap: 1rem; /* Espacio entre imágenes */
+    width: 100vw; /* Ancho completo de la ventana */
+    margin: 0; /* Sin margen exterior */
+    padding: 1rem; /* Espacio alrededor del collage */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    background-color: #f3f1f1 /* Fondo blanco para la sección del collage */
+  }
 
-.grupo {
-  display: flex;
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  /* Ajusta las imágenes a sus respectivas áreas */
+  .collage img:nth-child(1) { grid-column: 1 / span 2; grid-row: 1; } /* Imagen A ocupa dos columnas */
+  .collage img:nth-child(2) { grid-column: 3 / span 1; grid-row: 1; } /* Imagen B ocupa una columna */
+  .collage img:nth-child(3) { grid-column: 4 / span 1; grid-row: 1; } /* Imagen C ocupa una columna */
+  .collage img:nth-child(4) { grid-column: 1 / span 1; grid-row: 2; } /* Imagen D ocupa una columna */
+  .collage img:nth-child(5) { grid-column: 2 / span 3; grid-row: 2; } /* Imagen E ocupa tres columnas */
 
-.texto1{
-  text-align: center;
-  margin-top: 125px;
-  opacity: 0; /* Inicialmente oculto */
-  transition: opacity 0.5s; /* Transición suave de la opacidad */
-}
-
-.texto2{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  opacity: 0; /* Inicialmente oculto */
-  transition: opacity 0.5s; /* Transición suave de la opacidad */
-  width: 90%;
-  margin: 0 auto;
-  column-gap: 10%;
-}
-
-.parrafo-con-margen1 {
-  text-align: justify;
-  opacity: 0; /* Inicialmente oculto */
-  transition: opacity 0.5s; /* Transición suave de la opacidad */
-}
-
-.texto3{
-  text-align: center;
-  margin-top: 125px;
-  opacity: 0; /* Inicialmente oculto */
-  transition: opacity 0.5s; /* Transición suave de la opacidad */
-}
-
-.imagen-grupo-1 {
-  width: 30%;
-}
-
-.imagen-grupo-2 {
-  width: 30%;
-
-}
-
-.imagen-grupo-3 {
-  width: 30%;
-
-} 
-
-.imagen-grupo-4 {
-  width: 30%;
-  justify-content: flex-start;
-} 
-
-.parrafo-con-margen2{
-  text-align: justify;
-  text-align: left;
-  opacity: 0; /* Inicialmente oculto */
-  transition: opacity 0.5s;
-}
-
-
-
-.texto4{
-  display: flex;
-  flex-direction: row;
-  column-gap: 10%;
-  opacity: 0; /* Inicialmente oculto */
-}
-
-.parrafo-con-margen3{
-  margin-bottom:50px ;
-  opacity: 0; /* Inicialmente oculto */
-}
-
-.texto5{
-  text-align: center;
-  margin-top: 125px;
-  opacity: 0; /* Inicialmente oculto */
-  transition: opacity 0.5s; /* Transición suave de la opacidad */
-  margin-bottom: 30px;
-}
-
-.texto6{
-  display: flex;
-  flex-direction: row;
-  column-gap: 10%;
-  opacity: 0; /* Inicialmente oculto */
-}
-
-.parrafo-con-margen4{
-  margin-bottom:50px ;
-  opacity: 0; /* Inicialmente oculto */
-}
-
-.texto7{
-  text-align: center;
-  margin-top: 125px;
-  opacity: 0; /* Inicialmente oculto */
-  transition: opacity 0.5s; /* Transición suave de la opacidad */
-  margin-bottom: 30px;
-
-}
-
-.texto8{
-  display: flex;
-  flex-direction: row;
-  column-gap: 10%;
-  opacity: 0; /* Inicialmente oculto */
-}
-
-.parrafo-con-margen5{
-  margin-bottom:50px ;
-  opacity: 0; /* Inicialmente oculto */
-}
-
-.parrafo-con-margen6{
-  margin-bottom:50px;
-  text-align: justify;
-  text-align: center;
-  opacity: 0; /* Inicialmente oculto */
-}
-
-.textoHorario {
-  text-align: center; 
-  width: 100%;
-  margin-top:50px;
-  opacity: 0; /* Inicialmente oculto */
-}
-
-.textoFotos {
-  text-align: center; 
-  width: 100%;
-  margin-top:50px;
-  opacity: 0; /* Inicialmente oculto */
-}
-
-.collage {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
-  grid-template-rows: minmax(auto, 50vh) minmax(auto, 50vh); /* Dos filas que ocupan cada una el 50% de la altura de la ventana */
-  gap: 1rem; /* Espacio entre imágenes */
-  width: 100vw; /* Ancho completo de la ventana */
-  margin: 0; /* Sin margen exterior */
-  padding: 1rem; /* Espacio alrededor del collage */
-  box-sizing: border-box; /* Incluye el padding en el ancho total */
-  background-color: #f3f1f1 /* Fondo blanco para la sección del collage */
-}
-
-/* Ajusta las imágenes a sus respectivas áreas */
-.collage img:nth-child(1) { grid-column: 1 / span 2; grid-row: 1; } /* Imagen A ocupa dos columnas */
-.collage img:nth-child(2) { grid-column: 3 / span 1; grid-row: 1; } /* Imagen B ocupa una columna */
-.collage img:nth-child(3) { grid-column: 4 / span 1; grid-row: 1; } /* Imagen C ocupa una columna */
-.collage img:nth-child(4) { grid-column: 1 / span 1; grid-row: 2; } /* Imagen D ocupa una columna */
-.collage img:nth-child(5) { grid-column: 2 / span 3; grid-row: 2; } /* Imagen E ocupa tres columnas */
-
-/* Asegura que las imágenes cubran sus respectivas celdas completamente */
-.collage img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Cubre el área de la celda sin distorsionarse */
+  /* Asegura que las imágenes cubran sus respectivas celdas completamente */
+  .collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre el área de la celda sin distorsionarse */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
+  }
 
-/* Estilos opcionales para las imágenes */
-.collage img {
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
+  /* Estilos opcionales para las imágenes */
+  .collage img {
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
 
-
-.footer {
+  
+  .footer {
   background-color: #000000; 
   color: white; 
   text-align: center; 
@@ -520,95 +521,98 @@ body {
   font-size: 14px;
   width: 100%; 
   position: relative; 
-  left: 0; /* Alinea a la izquierda */
-  bottom: 0; /* Alinea en la parte inferior */
-  right: 0; /* Alinea a la derecha */
-} 
+    left: 0; /* Alinea a la izquierda */
+    bottom: 0; /* Alinea en la parte inferior */
+    right: 0; /* Alinea a la derecha */
+ } 
+  
 
 
+  /* Añade una clase para activar la animación cuando sea necesario */
+  .mostrar {
+    opacity: 1;
+    transition: opacity 1s; /* Transición suave de la opacidad */
 
-/* Añade una clase para activar la animación cuando sea necesario */
-.mostrar {
-  opacity: 1;
-  transition: opacity 1s; /* Transición suave de la opacidad */
-
-}
+  }
 
 /* RSPONSIVE DE MOVIL */
-
+  
 
 @media (max-width: 768px) {
-.navbar {
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.navbar .logo,
-.navbar .social-media,
-.navbar .menu,
-.navbar .login-logout {
-  margin: 5px 0;
-}
+  .navbar .logo,
+  .navbar .social-media,
+  .navbar .menu,
+  .navbar .login-logout {
+    margin: 5px 0;
+  }
 
-.cards-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centrar las tarjetas horizontalmente */
-  justify-content: center; /* Centrar las tarjetas verticalmente, opcional */
-}
+  .cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar las tarjetas horizontalmente */
+    justify-content: center; /* Centrar las tarjetas verticalmente, opcional */
+    padding: 5%;
+  }
 
-.card {
-  width: 90%; /* Aumentar el ancho de las tarjetas */
-  margin: 10px auto; /* Agregar margen arriba y abajo, y auto para centrar horizontalmente */
-  padding: 20px; /* Aumentar el padding para dar más espacio dentro de las tarjetas */
-}
+  .card {
+    width: 90%; /* Aumentar el ancho de las tarjetas */
+    margin: 10px auto; /* Agregar margen arriba y abajo, y auto para centrar horizontalmente */
+    padding: 20px; /* Aumentar el padding para dar más espacio dentro de las tarjetas */
+  }
 
-.card:nth-child(1), .card:nth-child(2), .card:nth-child(3){
-  width: 70%;
+  .card:nth-child(1), .card:nth-child(2), .card:nth-child(3){
+    width: 70%;
 
-}
+  }
 
 
 .texto2, .texto4, .texto6, .texto8{
-  flex-direction: column;
-}
+    flex-direction: column;
+  }
 
 .imagen-grupo-1, .imagen-grupo-2, .imagen-grupo-3, .imagen-grupo-4{
-  width: 100%;
-  margin-bottom: 20px;
-}
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
 .parrafo-con-margen1,.parrafo-con-margen3, .parrafo-con-margen4, .parrafo-con-margen5  {
-  text-align: justify;
+    text-align: justify;
   text-align: center;
-}
+  }
 
-.footer {
-  font-size: 12px;
-}
+  .footer {
+    font-size: 12px;
 
-.navbar {
-  flex-direction: column;
-  align-items: center;
-}
 
-.navbar div {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
+  }
 
-.logo, .social-media, .menu, .login-logout {
-  margin-bottom: 10px;
-}
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.social-media a, .menu a {
-  margin: 0 10px;
-}
+  .navbar div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 
-.navbar .logo{
-  font-size: 25px;
-}
+  .logo, .social-media, .menu, .login-logout {
+    margin-bottom: 10px;
+  }
+
+  .social-media a, .menu a {
+    margin: 0 10px;
+  }
+
+  .navbar .logo{
+    font-size: 25px;
+  }
 
 .collage {
   grid-template-columns: 1fr; /* Una sola columna */
