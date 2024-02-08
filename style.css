@@ -74,11 +74,11 @@ body {
   }
   
   .top-half img {
-    width: 100%; /* Estira la imagen para que ocupe el 100% del ancho del contenedor */
-    height: 400px; /* Altura fija para evitar que la imagen se haga más alta */
-    object-fit: cover; /* Asegura que la imagen cubra el área designada sin perder sus proporciones */
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
     display: block;
-    margin: 0 auto; /* Centra la imagen horizontalmente si es más pequeña que el contenedor */
+    margin: 0 auto; 
   }
   /* CARDS - Carrusel*/
   .cards-section-carousel {
@@ -159,11 +159,11 @@ body {
 }
 
 .top-half img {
-  width: 100%; /* Estira la imagen para que ocupe el 100% del ancho del contenedor */
-  height: 400px; /* Altura fija para evitar que la imagen se haga más alta */
-  object-fit: cover; /* Asegura que la imagen cubra el área designada sin perder sus proporciones */
+  width: 100%; 
+  height: 400px; 
+  object-fit: cover; 
   display: block;
-  margin: 0 auto; /* Centra la imagen horizontalmente si es más pequeña que el contenedor */
+  margin: 0 auto;
 }
 /* CARDS - Carrusel*/
 .cards-section-carousel {
@@ -500,6 +500,9 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Cubre el área de la celda sin distorsionarse */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Estilos opcionales para las imágenes */
@@ -510,13 +513,13 @@ body {
 
 
 .footer {
-  background-color: #000000; /* Fondo oscuro para el pie de página */
-  color: white; /* Texto en color blanco */
-  text-align: center; /* Texto centrado */
-  padding: 20px 0; /* Relleno arriba y abajo */
-  font-size: 14px; /* Tamaño de fuente más pequeño para el pie de página */
-  width: 100%; /* Asegura que el footer ocupe todo el ancho de la ventana */
-  position: relative; /* Posición relativa para asegurarse de que se coloque correctamente */
+  background-color: #000000; 
+  color: white; 
+  text-align: center; 
+  padding: 20px 0; 
+  font-size: 14px;
+  width: 100%; 
+  position: relative; 
   left: 0; /* Alinea a la izquierda */
   bottom: 0; /* Alinea en la parte inferior */
   right: 0; /* Alinea a la derecha */
@@ -566,23 +569,22 @@ body {
 }
 
 
-.texto2, .texto4 {
+.texto2, .texto4, .texto6, .texto8{
   flex-direction: column;
 }
 
-.imagen-grupo-1, .imagen-grupo-2 {
+.imagen-grupo-1, .imagen-grupo-2, .imagen-grupo-3, .imagen-grupo-4{
   width: 100%;
   margin-bottom: 20px;
 }
 
-.parrafo-con-margen1,.parrafo-con-margen3  {
+.parrafo-con-margen1,.parrafo-con-margen3, .parrafo-con-margen4, .parrafo-con-margen5  {
   text-align: justify;
+  text-align: center;
 }
 
 .footer {
   font-size: 12px;
-
-
 }
 
 .navbar {
@@ -608,5 +610,17 @@ body {
   font-size: 25px;
 }
 
+.collage {
+  grid-template-columns: 1fr; /* Una sola columna */
+  grid-template-rows: auto; /* Altura automática para cada fila */
+}
 
+.collage img:nth-child(1), 
+.collage img:nth-child(2), 
+.collage img:nth-child(3), 
+.collage img:nth-child(4), 
+.collage img:nth-child(5) {
+  grid-column: 1; /* Todas las imágenes en la primera columna */
+  grid-row: auto; /* Altura automática para cada imagen */
+}
 }
