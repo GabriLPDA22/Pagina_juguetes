@@ -50,17 +50,102 @@ body {
   cursor: pointer;
 }
 
-/* Estilos del Contenido Principal */
-.main-content {
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* Para asegurarse de que no haya desbordamiento si la imagen es muy grande */
-}
-
-.main-content img {
-  object-fit: contain; /* Asegura que la imagen se ajuste sin cortarse ni perder proporción */
+  /* Estilos del Contenido Principal */
+  .main-content {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Para asegurarse de que no haya desbordamiento si la imagen es muy grande */
+  }
   
-}
+  .main-content img {
+    object-fit: contain; /* Asegura que la imagen se ajuste sin cortarse ni perder proporción */
+    
+  }
+  
+  .top-half {
+    text-align: center; /* Esto centra la imagen si es más pequeña que el ancho del contenedor */
+    padding: 0px; /* Esto agrega un poco de espacio arriba y abajo de la imagen */
+    background-image: url(/FotosWeb/juguetes.png);
+    height: 500px;
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .top-half img {
+    width: 100%; /* Estira la imagen para que ocupe el 100% del ancho del contenedor */
+    height: 400px; /* Altura fija para evitar que la imagen se haga más alta */
+    object-fit: cover; /* Asegura que la imagen cubra el área designada sin perder sus proporciones */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente si es más pequeña que el contenedor */
+  }
+  /* CARDS - Carrusel*/
+  .cards-section-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0px;
+    background-color: #FFF5EB;
+    margin-bottom: -4px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    user-select: none;
+    -webkit-user-drag: none;
+    touch-action: pan-x;
+    /* scroll-behavior: smooth; */ /* Opcional: descomentar si se desea suavidad en el scroll no automático */
+    /* scroll-snap-type: none; */ /* Descomentar si se desactiva el scroll-snap */
+  }
+  
+  .card {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    text-align: center;
+    display: inline-block;
+    white-space: normal;
+    flex: 0 0 auto;
+    /* scroll-snap-align: none; */ /* Descomentar si se desactiva el scroll-snap */
+    flex-shrink: 0;
+  }
+  .card-image {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+  .image-1 {
+    background-image: url(./FotosWeb/Fotos.png);
+  }
+
+  .image-2{
+    background-image: url(./FotosWeb/Empresas.png);
+  }
+
+  .image-3{
+    background-image: url(./FotosWeb/Destinatarios.png);
+  }  
+
+  .image-4{
+    background-image: url(./FotosWeb/ComoAyudar.png);
+
+  }
+
+  .image-5{
+    background-image: url(./FotosWeb/Grupo.jpg);
+  }
+
+  .card-text {
+    height: 70px;
+  }
+  
+  .cards-section-carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+
 
 .top-half {
   text-align: center; /* Esto centra la imagen si es más pequeña que el ancho del contenedor */
