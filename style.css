@@ -59,28 +59,32 @@ body {
   
   .main-content img {
     object-fit: contain; /* Asegura que la imagen se ajuste sin cortarse ni perder proporción */
-    
   }
   
   .top-half {
     text-align: center;
     padding: 0px;
     background-image: url('./FotosWeb/portada1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
-    height: 500px; /* Ajusta la altura según sea necesario */
+    background-position: center center; /* Ajusta la imagen al centro */
+    background-size: cover; /* Se ajusta para asegurarse de que todo el texto es visible */
+    background-repeat: no-repeat;
     width: 100%;
-    background-position: top center; /* Ajusta esto si el texto no está en la parte superior central */
-    background-size: cover; /* Cambia 'cover' por 'contain' para evitar recorte */
-    background-repeat: no-repeat; /* Esto evitará que la imagen se repita */
-    background-attachment: fixed;
+    height: auto; /* Altura automática para mantener la proporción */
+    display: flex; /* Utiliza flexbox para centrar contenido */
+    justify-content: center; /* Centra contenido horizontalmente */
+    align-items: center; /* Centra contenido verticalmente */
+    min-height: 500px; /* Ajusta esto según el tamaño de tu texto */
   }
+  
   
   .top-half img {
     max-width: 100%; /* Esto asegura que la imagen no se desborde de su contenedor */
     height: auto; /* Esto mantiene las proporciones de la imagen */
-    object-fit: cover; /* Cambia 'cover' por 'contain' para evitar recorte */
+    object-fit: contain; /* Cambiado de 'cover' a 'contain' para evitar recorte */
     display: block;
     margin: 0 auto; 
   }
+  
   
 
   /* CARDS - Carrusel*/
